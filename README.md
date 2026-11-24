@@ -17,7 +17,7 @@ Run commands on configured remote servers over SSH — from the DSH main panel o
 1. 克隆仓库：
 
    ```bash
-   git clone https://github.com/<your-account>/dsh-remote-shell.git
+   git clone https://github.com/xushl/dsh_plugin.git dsh-remote-shell
    ```
 
 2. 让 agent 安装这个本地 bundle（推荐）：

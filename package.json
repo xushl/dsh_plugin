@@ -12,6 +12,14 @@
     "ssh",
     "remote-shell"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xushl/dsh_plugin.git"
+  },
+  "homepage": "https://github.com/xushl/dsh_plugin#readme",
+  "bugs": {
+    "url": "https://github.com/xushl/dsh_plugin/issues"
+  },
   "type": "module",
   "exports": {
     ".": "./index.js",
