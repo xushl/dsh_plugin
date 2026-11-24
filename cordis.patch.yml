@@ -1,0 +1,25 @@
+# Bundle patch layer: one Host row that registers the remote-shell tools, the
+# HTTP bridge and the main-panel page (the Client half is declared by the
+# `dsh.client` field in package.json).
+#
+# `hosts` ships empty so this file is safe to publish: add servers from the
+# "远程 Shell" panel in the app (it writes them into your profile's own
+# cordis.patch.yml), or fill the example below and reload the plugin.
+- insert:
+    - id: dsh-remote-shell
+      name: "@local/dsh-remote-shell"
+      config:
+        defaultTimeoutMs: 60000
+        maxTimeoutMs: 600000
+        maxOutputChars: 24000
+        approval: never
+        hosts: []
+        # Example — replace with your own values:
+        # hosts:
+        #   - name: my-server
+        #     host: 192.0.2.10
+        #     user: root
+        #     port: 22
+        #     identityFile: 'C:\Users\you\.ssh\dsh_remote_ed25519'
+        #     workdir: /root
+        #     shell: /bin/bash

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Remote shell",
+    "description": "Run commands on configured remote servers over SSH — manage servers in a main-panel page or let the model run them through tools."
+  }
+}
